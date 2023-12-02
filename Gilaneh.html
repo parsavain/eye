@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gilaneh Menu</title>
+    <style>
+        header {
+
+            /* background-color: #ccc; */
+            background: transparent;
+            backdrop-filter: blur(50px);
+            color: #000;
+            padding: 5px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin: 10px;
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+            padding: 2%;
+        }
+
+        nav li a {
+            font-weight: bold;
+            font-size: 34px;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        nav li a:hover {
+            background-color: transparent;
+            box-shadow: 0px 0px 5px, 0px 5px 5px;
+            /* inja shadow midm */
+        }
+
+
+
+
+
+
+
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            background: url('img.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            margin: 25px;
+        }
+
+        h1 {
+            /* text-shadow: 0px 0px 5px rgba(0,0,0); */
+            font-size: 36px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: #fff;
+            font-weight: bold;
+            /* display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px; */
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 23px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item {
+            border: 2px solid rgb(255, 255, 255, .2);
+            background: transparent;
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 15px;
+            margin-bottom: 20px;
+            /* background-color: #fff; */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            float: left;
+            margin-right: 10px;
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .menu-item h3 {
+            line-height: 1.8em;
+            color: #fff;
+            font-size: 15px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .menu-item p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        .menu-item .price {
+            color: #f2f2f2;
+            float: right;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h1>Gilaneh Menu</h1>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#appetizers">Appetizers</a></li>
+                <li><a href="#entrees">Entrees</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+                <li><a href="#hookah">Hookah</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 id="appetizers">Appetizers</h2>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/100x100" alt="Hummus">
+        <h3>Hummus</h3>
+        <p>Chickpea dip with tahini, garlic and lemon juice.</p>
+        <div class="price">100.000 T</div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/100x100" alt="Yogurt Dip">
+        <h3>Yogurt Dip</h3>
+        <p>Yogurt dip with cucumber, mint and walnuts.</p>
+        <div class="price">150.000 T</div>
+        <div class="clearfix"></div>
+    </div>
+
+    <h2 id="entrees">Entrees</h2>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/100x100" alt="Kebab">
+        <h3>Kebab</h3>
+        <p>Grilled skewers of marinated beef, served with rice and salad.</p>
+        <div class="price">160.000 T</div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/100x100" alt="Gheymeh">
+        <h3>Gheymeh</h3>
+        <p>Stewed beef and split peas, served with rice and salad.</p>
+        <div class="price">200.000 T</div>
+        <div class="clearfix"></div>
+    </div>
+
+    <h2 id="desserts">Desserts</h2>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/100x100" alt="Baklava">
+        <h3>Baklava</h3>
+        <p>Sweet pastry made of layers of phyllo dough filled with chopped nuts and sweetened with syrup or honey.</p>
+        <div class="price">30.000 T</div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/100x100" alt="Faloodeh">
+        <h3>Faloodeh</h3>
+        <p>Traditional Persian frozen dessert made of thin vermicelli noodles frozen with rose water and sugar syrup.
+        </p>
+        <div class="price">40.000 T</div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+
+    <h2 id="hookah">Hookah</h2>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/100x100" alt="Baklava">
+        <h3>Dosib</h3>
+        <p>fjgohb ufihobjcv ufud5e6r yfihpjpj ufugigob yfigoh ugojpj uftw ih ugohp igifufe twtwjfv 9h iggkg. </p>
+        <div class="price">150.000 T</div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="menu-item">
+        <img src="https://via.placeholder.com/100x100" alt="Faloodeh">
+        <h3>Dosib albaloo</h3>
+        <p>fjgohb ufihobjcv ufud5e6r yfihpjpj ufugigob yfigoh ugojpj uftw ih ugohp igifufe twtwjfv 9h iggkg.</p>
+        <div class="price">150.000 T</div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- hookah -->
+
+
+
+
+
+
+</body>
+
+</html>
