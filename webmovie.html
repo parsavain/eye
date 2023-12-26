@@ -26,25 +26,28 @@
         }
     </style>
     <script>
-        function checkCredentials() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
+ function checkCredentials() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
-            // اینجا یوزرنیم و پسورد مورد نظر را وارد کنید
-            var correctUsername = "ilia";
-            var correctPassword = "8585";
+    // اینجا یوزرنیم و پسورد مورد نظر را وارد کنید
+    var correctUsername = "ilia";
+    var correctPassword = "8585";
 
-            if (username === correctUsername && password === correctPassword) {
-                var source = document.getElementById("video-source");
-                var newSource = document.getElementById("new-source").value;
+    if (username === correctUsername && password === correctPassword) {
+        var video = document.getElementById("video");
+        var newSource = document.getElementById("new-source").value;
 
-                source.src = newSource;
-                source.type = "video/mp4";
-                alert("boobs!")
-            } else {
-                alert("نام کاربری یا رمزعبور اشتباه است!");
-            }
-        }
+        video.pause(); // توقف پخش ویدیو
+        video.src = newSource; // تغییر مبدا ویدیو
+        video.load(); // بارگیری مجدد ویدیو
+        video.play(); // شروع پخش ویدیو
+
+        alert("ویدیو با موفقیت بارگیری شد!");
+    } else {
+        alert("نام کاربری یا رمزعبور اشتباه است!");
+    }
+}
 
         function syncVideo() {
             var video = document.getElementById("video");
